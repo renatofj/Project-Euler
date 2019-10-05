@@ -18,10 +18,10 @@ f = fibonacci()
 i = 1
 
 while True:
-	n = f.next()
+	n = next(f)
 	
 	if digits(n) == 1000:
-		print i
+		print(i)
 		break
 
 	i = i + 1

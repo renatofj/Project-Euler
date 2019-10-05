@@ -10,7 +10,7 @@ i = 1
 
 while True:
 	if isdivisiblerange(i, 20):
-		print i
+		print(i)
 		break
 
 	i = i + 1

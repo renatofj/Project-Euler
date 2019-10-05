@@ -2,5 +2,5 @@
 
 f = 2**1000
 
-print f
-print sum(map(int, str(f)))
+print(f)
+print(sum(list(map(int, str(f)))))

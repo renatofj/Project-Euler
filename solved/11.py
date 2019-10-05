@@ -24,10 +24,10 @@ nums = (
 )
 
 def seqs(nums, row, col):
-	if row + 4 <= len(nums): yield list(nums[i][col] for i in xrange(row, row + 4))
-	if col + 4 <= len(nums[row]): yield list(nums[row][i] for i in xrange(col, col + 4))
-	if row + 4 <= len(nums) and col + 4 <= len(nums[row]): yield list(nums[row + i][col + i] for i in xrange(0, 4))
-	if row + 4 <= len(nums) and col >= 3: yield list(nums[row + i][col - i] for i in xrange(0, 4))
+	if row + 4 <= len(nums): yield list(nums[i][col] for i in range(row, row + 4))
+	if col + 4 <= len(nums[row]): yield list(nums[row][i] for i in range(col, col + 4))
+	if row + 4 <= len(nums) and col + 4 <= len(nums[row]): yield list(nums[row + i][col + i] for i in range(0, 4))
+	if row + 4 <= len(nums) and col >= 3: yield list(nums[row + i][col - i] for i in range(0, 4))
 	
 def product(seq):
 	n = 1
@@ -35,8 +35,8 @@ def product(seq):
 	return n
 		
 def list_seqs(nums):
-	for row in xrange(0, len(nums)):
-		for col in xrange(0, len(nums[row])):
+	for row in range(0, len(nums)):
+		for col in range(0, len(nums[row])):
 			for seq in seqs(nums, row, col):
 				yield seq
 				

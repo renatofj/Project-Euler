@@ -10,5 +10,5 @@ def factorial(x):
 
 f = factorial(100)
 
-print f
-print sum(map(int, str(f)))
+print(f)
+print(sum(list(map(int, str(f)))))

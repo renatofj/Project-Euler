@@ -5,4 +5,4 @@ i = 0
 for x in range(1, 1001):
 	i = i + pow(x, x, 10**10)
 
-print i % 10**10
+print(i % 10**10)

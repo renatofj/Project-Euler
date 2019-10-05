@@ -28,7 +28,7 @@ while True:
 		i = i + 1
 		
 		if i == 10001:
-			print x
+			print(x)
 			break
 	
 	x = x + 1
